@@ -1,0 +1,19 @@
+<section class="section" id="about">
+  <div class="container">
+    <h2>About Me</h2>
+
+    @if (about(); as a) {
+      <div class="about">
+        <div class="about-text">
+          <p>{{ a.description }}</p>
+        </div>
+
+        @if (a.image) {
+          <div class="polaroid">
+            <img [src]="imagesUrl + a.image" width="260" height="260" [alt]="name" />
+          </div>
+        }
+      </div>
+    }
+  </div>
+</section>

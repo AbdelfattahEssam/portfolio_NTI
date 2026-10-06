@@ -1,0 +1,22 @@
+.footer {
+  width: 100%;
+  padding: 1.25rem 1.25rem 2rem;
+  border-top: 1px solid rgb(163 163 163 / 0.2);
+  text-align: center;
+}
+
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: var(--text-xs);
+}
+
+.footer a {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+}
+
+.footer a:hover { color: var(--primary); }

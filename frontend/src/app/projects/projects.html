@@ -1,0 +1,18 @@
+<section class="section" id="projects">
+  <div class="container">
+    <h2>Featured Projects</h2>
+
+    @for (project of projects(); track project._id; let i = $index) {
+      <div class="project" [style.top.px]="98 + i * 40">
+        <div class="project-inner">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.summary }}</p>
+          <div class="project-links">
+            <a class="ext" [href]="project.linkSource" target="_blank" rel="noopener">GitHub Repo</a>
+            <a class="ext" [href]="project.linkPreview" target="_blank" rel="noopener">Postman Collection</a>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</section>

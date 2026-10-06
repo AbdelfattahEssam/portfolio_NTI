@@ -1,0 +1,9 @@
+<footer class="footer">
+  <ul>
+    @for (link of socialLinks; track link.text) {
+      <li>
+        <a class="ext" [href]="link.href" target="_blank" rel="noopener">{{ link.text }}</a>
+      </li>
+    }
+  </ul>
+</footer>

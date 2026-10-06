@@ -1,0 +1,57 @@
+:root {
+  --primary: #4f7cff;
+  --neutral: #a3a3a3;
+
+  --font-serif: "Gabarito", sans-serif;
+  --font-sans: "Be Vietnam Pro", system-ui, sans-serif;
+
+  --text-xs: 0.875rem;
+  --text-sm: 1rem;
+  --text-base: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 2.5rem;
+  --text-6xl: 3rem;
+  --text-7xl: 3.75rem;
+  --text-8xl: 4.5rem;
+  --text-9xl: 6rem;
+
+  --tracking-tightest: -2px;
+  --tracking-tighter: -1px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+body {
+  background: #000;
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.625rem;
+}
+ul { list-style: none; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+.container { max-width: 48rem; margin: 0 auto; padding: 0 1.25rem; }
+
+.section { padding: 6rem 0; }
+.section h2 {
+  font-family: var(--font-serif); font-weight: 700;
+  font-size: var(--text-4xl);
+  letter-spacing: var(--tracking-tighter);
+  margin-bottom: 3.5rem;
+}
+@media (min-width: 768px) {
+  .section h2 { font-size: var(--text-5xl); }
+}
+
+.ext::after {
+  content: "";
+  display: inline-block; position: relative; bottom: -0.25rem;
+  width: 1em; height: 1em; margin-left: 0.25rem;
+  background: no-repeat center / contain
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17 17 7M8 7h9v9'/%3E%3C/svg%3E");
+}

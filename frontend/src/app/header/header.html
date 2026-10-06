@@ -1,0 +1,46 @@
+<header class="header">
+  <a routerLink="/" aria-label="Home link">
+    <img
+      class="logo"
+      src="https://abdelfattah-essam.vercel.app/abdelfattah-small.jpg"
+      width="45"
+      height="45"
+      alt="website logo"
+    />
+  </a>
+
+  <button
+    type="button"
+    class="menu-button"
+    (click)="toggleMenu()"
+    [attr.aria-expanded]="isOpen"
+    aria-label="Toggle menu"
+  >
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+    >
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+
+  <nav class="nav" [class.open]="isOpen">
+    <ul>
+      <li>
+        <a class="nav-item" routerLink="/" fragment="experience" (click)="closeMenu()"
+          >Experience</a
+        >
+      </li>
+      <li>
+        <a class="nav-item" routerLink="/" fragment="projects" (click)="closeMenu()">Projects</a>
+      </li>
+      <li><a class="nav-item" routerLink="/" fragment="about" (click)="closeMenu()">About</a></li>
+      <li><a class="nav-item" routerLink="/dashboard" (click)="closeMenu()">Dashboard</a></li>
+    </ul>
+  </nav>
+</header>

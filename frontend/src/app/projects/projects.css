@@ -1,0 +1,32 @@
+.project {
+  position: sticky;
+  margin-bottom: 3rem;
+  border: 1px solid rgb(163 163 163 / 0.2);
+  border-radius: 1rem;
+  background: #000;
+}
+
+.project-inner {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  background: rgb(28 35 45 / 0.85);
+}
+
+.project h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--text-3xl);
+  line-height: 2.375rem;
+  color: var(--primary);
+  margin-bottom: 1.25rem;
+}
+
+.project p { color: var(--neutral); }
+
+.project-links { display: flex; gap: 1.25rem; padding-top: 2.5rem; }
+.project-links a:hover { text-decoration: underline; }
+
+@media (min-width: 768px) {
+  .project-inner { height: 16rem; }
+}
